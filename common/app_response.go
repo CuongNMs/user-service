@@ -13,3 +13,11 @@ func NewAppResponse(data, paging, filter interface{}) *AppResponse {
 		Filter: filter,
 	}
 }
+
+func NewAppResponseSimple(data interface{}) *AppResponse {
+	return &AppResponse{
+		Data:   data,
+		Paging: nil,
+		Filter: nil,
+	}
+}

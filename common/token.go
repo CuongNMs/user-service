@@ -9,7 +9,7 @@ func NewToken() *Token {
 }
 
 func (token *Token) GenerateToken(firstName, lastName string) *Token {
-	// fake token
+	// dump token
 	token.Token = firstName + lastName
 	return token
 }
